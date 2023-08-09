@@ -26,9 +26,50 @@
     <link rel="stylesheet" href="./css/output.css" />
   </head>
   <body>
-    <i class="fa-brands fa-facebook-f"></i>
-    We are launching soon! Subscribe and get notified Notify Me &copy; Copyright
-    Ping. All rights reserved.
+    <main class="mx-auto font-franklin p-8">
+      <!-- title section -->
+      <section class="title mt-16 scale-75">
+        <img
+          src="./images/logo.svg"
+          alt="logo with text PING."
+          class="mx-auto"
+        />
+      </section>
+
+      <!-- text description -->
+      <section class="description mt-10">
+        <p class="font-light text-xl tracking-wider text-center text-gray">
+          We are launching <span class="font-bold text-black">soon!</span>
+        </p>
+        <p class="font-light text-xs text-center mt-3">
+          Subscribe and get notified
+        </p>
+      </section>
+
+      <!-- email form -->
+      <section class="email-form mx-auto text-center mt-10">
+        <input
+          type="email"
+          name="email"
+          id="email"
+          class="border-gray border font-light shadow-sm placeholder:text-sm focus:outline-none focus:border-paleBlue focus:ring-paleBlue focus:ring-1 rounded-full placeholder:text-gray w-72 py-2 pl-7 pr-3"
+          placeholder="Your email address..."
+        />
+        <button
+          class="py-2 mx-auto bg-blue rounded-full shadow-lg text-sm font-semibold text-white w-72 mt-3 text-center"
+        >
+          Notify Me
+        </button>
+      </section>
+
+      <!-- dashboard illustration image -->
+      <section class="dashboard-img"></section>
+
+      <!-- footer -->
+      <footer></footer>
+    </main>
+
+    Notify Me &copy; Copyright Ping. All rights reserved.
 
     <!-- font awesome js -->
     <script
