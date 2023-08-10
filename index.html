@@ -26,6 +26,15 @@
     <link rel="stylesheet" href="./css/output.css" />
   </head>
   <body>
+    <!-- TODO:
+    
+      1. benerin hover social media, saat di hover warna dari iconnya jadi putih dan warna bg nya jadi blue. [DONE]
+      2. lanjut versi tablet.
+      3. lanjut versi laptop.
+      4. lanjut saat error state.
+    
+    -->
+
     <main class="mx-auto font-franklin p-8">
       <!-- title section -->
       <section class="title mt-12 scale-75">
@@ -73,24 +82,34 @@
       <!-- footer -->
       <footer class="mt-24 flex flex-wrap gap-3 justify-center items-center">
         <!-- fb -->
+
+        <!-- use group in the wrapper of the icons so when we hover it, the span or the circle will automatically change the color inside the icons and the background -->
         <span
-          class="w-10 h-10 border-gray border border-opacity-40 rounded-full leading-10 inline-flex items-center justify-center hover:bg-sky-100 duration-500 transition hover:ease-in-out"
+          class="medias group w-10 h-10 border-gray border border-opacity-40 rounded-full leading-10 inline-flex items-center justify-center duration-1000 transition hover:text-white hover:bg-blue hover:ease-in-out"
         >
-          <i class="fa-brands fa-facebook-f fa-lg" style="color: #4f7df3"></i>
+          <!-- hover:text-white & hover:bg-blue for changing the color in the icons. so when the icons or the wrapper of the icons (span / the circle) gets hover by user, it will change the color inside the icons and the background color of the span. -->
+          <i
+            class="fa-brands fa-facebook-f fa-lg group-hover:text-white text-blue"
+          ></i>
+          <!-- text-blue for filling the color in the icons -->
         </span>
 
         <!-- twitter -->
         <span
-          class="w-10 h-10 border-gray border border-opacity-40 rounded-full leading-10 inline-flex items-center justify-center hover:bg-sky-100 duration-500 transition hover:ease-in-out"
+          class="medias group w-10 h-10 border-gray border border-opacity-40 rounded-full leading-10 inline-flex items-center justify-center duration-500 transition hover:ease-in-out hover:text-white hover:bg-blue"
         >
-          <i class="fa-brands fa-twitter fa-lg" style="color: #4f7df3"></i>
+          <i
+            class="fa-brands fa-twitter fa-lg group-hover:text-white text-blue"
+          ></i>
         </span>
 
         <!-- instagram -->
         <span
-          class="w-10 h-10 border-gray border border-opacity-40 rounded-full leading-10 inline-flex items-center justify-center hover:bg-sky-100 duration-500 transition hover:ease-in-out"
+          class="medias group w-10 h-10 border-gray border border-opacity-40 rounded-full leading-10 inline-flex items-center justify-center duration-500 transition hover:ease-in-out hover:text-white hover:bg-blue"
         >
-          <i class="fa-brands fa-instagram fa-lg" style="color: #4f7df3"></i>
+          <i
+            class="fa-brands fa-instagram fa-lg group-hover:text-white text-blue"
+          ></i>
         </span>
 
         <!-- copyright -->
