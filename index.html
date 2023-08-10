@@ -29,7 +29,7 @@
     <!-- TODO:
     
       1. benerin hover social media, saat di hover warna dari iconnya jadi putih dan warna bg nya jadi blue. [DONE]
-      2. lanjut versi tablet.
+      2. lanjut versi tablet. [DONE]
       3. lanjut versi laptop.
       4. lanjut saat error state.
     
@@ -37,7 +37,7 @@
 
     <main class="mx-auto font-franklin p-8">
       <!-- title section -->
-      <section class="title mt-12 scale-75">
+      <section class="title mt-12 scale-75 md:scale-100">
         <img
           src="./images/logo.svg"
           alt="logo with text PING."
@@ -47,25 +47,29 @@
 
       <!-- text description -->
       <section class="description mt-10">
-        <p class="font-light text-xl tracking-wider text-center text-gray">
+        <p
+          class="font-light text-xl tracking-wider text-center text-gray md:text-2xl"
+        >
           We are launching <span class="font-bold text-black">soon!</span>
         </p>
-        <p class="font-light text-xs text-center mt-3">
+        <p class="font-light text-xs text-center mt-3 md:text-sm">
           Subscribe and get notified
         </p>
       </section>
 
       <!-- email form -->
-      <section class="email-form mx-auto text-center mt-10">
+      <section
+        class="email-form mx-auto text-center mt-10 md:flex md:flex-col md:flex-wrap md:mt-12"
+      >
         <input
           type="email"
           name="email"
           id="email"
-          class="border-gray border font-light shadow-sm placeholder:text-sm focus:outline-none focus:border-paleBlue focus:ring-paleBlue focus:ring-1 rounded-full placeholder:text-gray w-72 py-2 pl-7 pr-3"
+          class="border-gray border font-light shadow-sm placeholder:text-sm focus:outline-none focus:border-paleBlue focus:ring-paleBlue focus:ring-1 rounded-full placeholder:text-gray w-72 py-2 pl-7 pr-3 md:w-80 md:mx-auto md:pl-8"
           placeholder="Your email address..."
         />
         <button
-          class="py-3 mx-auto bg-blue rounded-full shadow-xl text-sm font-semibold text-white w-72 mt-3 text-center"
+          class="py-3 mx-auto bg-blue rounded-full shadow-xl text-sm font-semibold text-white w-72 mt-3 text-center md:w-80 md:mx-auto"
         >
           Notify Me
         </button>
@@ -80,7 +84,9 @@
       </section>
 
       <!-- footer -->
-      <footer class="mt-24 flex flex-wrap gap-3 justify-center items-center">
+      <footer
+        class="mt-24 flex flex-wrap gap-3 justify-center items-center md:w-80 md:mx-auto"
+      >
         <!-- fb -->
 
         <!-- use group in the wrapper of the icons so when we hover it, the span or the circle will automatically change the color inside the icons and the background -->
